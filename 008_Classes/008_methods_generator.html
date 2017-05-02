@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyClass {
+
+    *createIterator() {
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+
+    }
+
+    let instance = new MyClass();
+    let iterator = instance.createIterator();
+    console.log(iterator.next().value, iterator.next().value, iterator.next().value)
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let colors = [ "red", "green", "blue" ];
+
+    let [ firstColor, secondColor ] = colors;
+
+    // с присвоением
+    // [ firstColor, secondColor ] = colors;
+    console.log(firstColor); // "red"
+    console.log(secondColor); // "green"
+
+    let [ , , thirdColor ] = colors;
+
+    console.log(thirdColor); // "blue"
+
+
+    //Example
+    let a = 1,
+        b = 2;
+
+    [ a, b ] = [ b, a ];
+
+    console.log(a); // 2
+    console.log(b); // 1
+</script>
+</body>
+</html>
