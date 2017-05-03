@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+</head>
+<body>
+<script type="module">
+    import {color, name, sum} from "module.js"
+    console.log(color);
+    console.log(name);
+    console.log(sum);
+
+
+
+    import Rectangle, { multiply } from "module.js";
+    console.log(multiply);
+    console.log(Rectangle);
+
+    import * as example from "module.js";
+
+    console.log(example);
+</script>
+</body>
+</html>

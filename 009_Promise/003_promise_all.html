@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+</head>
+<body>
+<script type="module">
+    import {createPromise} from "src/createPromise.js";
+
+    Promise.all([createPromise(1000, true), createPromise(2000, true), createPromise(3000, true), createPromise(5000, true)]).then(
+        result => console.log(result),
+        error => alert("ERROR")
+    );
+
+//    Promise.all([createPromise(1000, true), createPromise(2000, true), createPromise(3000, false), createPromise(5000, true)]).then(
+//        result => console.log(result),
+//        error => alert("ERROR")
+//    )
+
+</script>
+</body>
+</html>
