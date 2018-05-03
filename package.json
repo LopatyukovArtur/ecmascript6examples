@@ -1,0 +1,23 @@
+{
+  "name": "ecmascript6examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LopatyukovArtur/ecmascript6examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LopatyukovArtur/ecmascript6examples/issues"
+  },
+  "homepage": "https://github.com/LopatyukovArtur/ecmascript6examples#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
