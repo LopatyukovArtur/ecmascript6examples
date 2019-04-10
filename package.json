@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/http-server/bin/http-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LopatyukovArtur/ecmascript6examples.git"
+    "start": "babel-node index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LopatyukovArtur/ecmascript6examples/issues"
-  },
-  "homepage": "https://github.com/LopatyukovArtur/ecmascript6examples#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "prompts": "^2.0.4"
+  },
+  "engines": {
+    "node": ">= 6"
   }
 }
